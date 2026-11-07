@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>香港數學階梯 · 幼稚園至中六課程與測驗</title>
+<meta name="description" content="按幼稚園 K1 至中六分階段編排的香港數學課程網站：每個年級的學習單位、教學內容、例題與三程度測驗，全部附詳解。">
+<meta name="theme-color" content="#12564f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2312564f'/%3E%3Cpath d='M18 46V18h6l8 14 8-14h6v28h-6V29l-8 13-8-13v17z' fill='%23f7f4ec'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<script defer src="js/curriculum.js"></script>
+<script defer src="js/app.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#view">跳至主要內容</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#/" aria-label="香港數學階梯 首頁">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="30" height="30"><rect width="32" height="32" rx="8" fill="currentColor"/><path d="M9 23V9h3l4 7 4-7h3v14h-3v-8.6L16 20l-4-5.6V23z" fill="#f7f4ec"/></svg>
+      </span>
+      <span class="brand-text"><b>香港數學階梯</b><small>K1 – S6 課程 · 教學 · 測驗</small></span>
+    </a>
+
+    <nav class="top-nav" aria-label="主導覽">
+      <a href="#/" data-nav="home">首頁</a>
+      <a href="#/map" data-nav="map">課程地圖</a>
+      <a href="#/quiz" data-nav="quiz">測驗</a>
+      <a href="#/about" data-nav="about">關於</a>
+    </nav>
+
+    <div class="header-tools">
+      <form class="search" role="search" id="searchForm">
+        <label class="sr-only" for="searchInput">搜尋單元或課題</label>
+        <input id="searchInput" type="search" placeholder="搜尋課題" autocomplete="off">
+        <button type="submit" aria-label="搜尋">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16.5 16.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </form>
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="切換深色模式" aria-pressed="false">
+        <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path d="M21 13.2A8.5 8.5 0 0 1 10.8 3a8.5 8.5 0 1 0 10.2 10.2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="grade-strip" id="gradeStrip" aria-label="年級快速跳轉"></div>
+</header>
+
+<main id="view" tabindex="-1"></main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <p class="footer-brand">香港數學階梯</p>
+      <p class="footer-note">依據教育局《數學教育學習領域課程指引（小一至中六）》(2017 修訂) 及幼稚園教育課程指引編排，供自主學習與教學參考。</p>
+    </div>
+    <div class="footer-links">
+      <a href="#/map">課程地圖</a>
+      <a href="#/quiz">測驗中心</a>
+      <a href="#/about">關於與資料來源</a>
+    </div>
+  </div>
+  <p class="footer-copy">本網站為學習輔助材料，不取代學校正式課程與教科書。</p>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

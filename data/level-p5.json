@@ -1,0 +1,647 @@
+{
+  "id": "p5",
+  "name": "小五",
+  "stage": "高小",
+  "stageId": "ks2",
+  "age": "10–11 歲",
+  "weeklyLessons": 5,
+  "intro": "小五由多位數、近似值與分數四則開始，掌握小數乘除及百分數互換，並以面積、體積與排水法解決度量問題；最後用簡易方程、平均數與折線圖整理數據，為小六鋪路。",
+  "strands": [
+    "數與代數",
+    "度量",
+    "圖形與空間",
+    "數據處理"
+  ],
+  "units": [
+    {
+      "id": "p5-u1",
+      "title": "多位數與近似值",
+      "en": "Large Numbers and Approximation",
+      "strand": "數與代數",
+      "objectives": [
+        "能讀出、寫出及比較八位以內的多位數",
+        "能說出多位數中每個數字所代表的位值",
+        "能把整數四捨五入至萬位、千位、百位或十位",
+        "能用近似值估算計算結果是否合理"
+      ],
+      "teaching": [
+        {
+          "type": "text",
+          "html": "香港人口約七百五十萬，這類大數要按位值分組閱讀：由右邊起每三位一組（個、十、百；千、萬、十萬；百萬、千萬），所以 7 536 200 讀作「七百五十三萬六千二百」。"
+        },
+        {
+          "type": "text",
+          "html": "「四捨五入」不是隨意取數，而是看指定數位<b>右面一位</b>：該位是 0 至 4 就把後面的數位全部捨去，是 5 至 9 就向指定數位進 1，後面的數位全部變成 0。"
+        },
+        {
+          "type": "formula",
+          "html": "四捨五入至萬位：看千位數字。<br>千位 ≥ 5 → 萬位加 1；千位 ≤ 4 → 萬位不變；其餘數位補 0。"
+        },
+        {
+          "type": "example",
+          "title": "例題：把 3 648 752 四捨五入至萬位",
+          "html": "① 找出萬位數字：3 <b>4</b>68 752 的萬位是 4。<br>② 看右面的千位：千位是 8，8 ≥ 5，所以要進位。<br>③ 萬位 4 加 1 變成 5，後面的數位全部寫 0：<b>3 650 000</b>。<br>④ 檢查：3 650 000 與原數相差 1 248，小於半個萬（5 000），合理。"
+        },
+        {
+          "type": "tip",
+          "html": "常犯錯誤：連續進位時只進一次。例如 4 968 四捨五入至百位，十位是 6 要進位，百位 9 加 1 變成 10，必須再向千位進 1，答案是 <b>5 000</b>，不是 4 000。"
+        },
+        {
+          "type": "text",
+          "html": "近似值可以快速估算：48 721 × 3 看成 50 000 × 3 = 150 000，若計算機顯示 146 163，與估算相近，數量級合理；若顯示 14 616 便明顯輸入錯誤。"
+        }
+      ],
+      "keywords": [
+        "位值",
+        "四捨五入",
+        "近似值",
+        "估算"
+      ]
+    },
+    {
+      "id": "p5-u2",
+      "title": "分數：擴分、約分與異分母加減",
+      "en": "Fractions: Equivalent Fractions and Unlike Denominators",
+      "strand": "數與代數",
+      "objectives": [
+        "能用擴分把兩個分數化成同分母",
+        "能用分子和分母的最大公因數約分",
+        "能計算異分母分數的加法和減法",
+        "能把答案約至最簡或化為帶分數"
+      ],
+      "teaching": [
+        {
+          "type": "text",
+          "html": "<b>擴分</b>是分子和分母同時乘以同一個大於 1 的整數，<b>約分</b>是同時除以公因數，兩者分數的大小都不變，因為每份切得更細或更粗，但佔整體的比例相同。"
+        },
+        {
+          "type": "formula",
+          "html": "擴分：<span class=\"frac\"><span class=\"num\">a</span><span class=\"den\">b</span></span> = <span class=\"frac\"><span class=\"num\">a × k</span><span class=\"den\">b × k</span></span>（k 為大於 1 的整數）<br>約分：<span class=\"frac\"><span class=\"num\">a</span><span class=\"den\">b</span></span> = <span class=\"frac\"><span class=\"num\">a ÷ k</span><span class=\"den\">b ÷ k</span></span>（k 為公因數）<br>異分母加減：先通分，分母不變，只加減分子。"
+        },
+        {
+          "type": "example",
+          "title": "例題：計算 <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">6</span></span> − <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">8</span></span>",
+          "html": "① 6 和 8 的最小公倍數是 24，用 24 作公分母。<br>② 擴分：<span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">6</span></span> = <span class=\"frac\"><span class=\"num\">20</span><span class=\"den\">24</span></span>，<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">8</span></span> = <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">24</span></span>。<br>③ 分母不變，分子相減：<span class=\"frac\"><span class=\"num\">20</span><span class=\"den\">24</span></span> − <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">24</span></span> = <span class=\"frac\"><span class=\"num\">11</span><span class=\"den\">24</span></span>。<br>④ 11 和 24 互質，已是最簡，答案 <b><span class=\"frac\"><span class=\"num\">11</span><span class=\"den\">24</span></span></b>。"
+        },
+        {
+          "type": "tip",
+          "html": "常犯錯誤：異分母時把分子、分母各自相加，寫成 <span class=\"frac\"><span class=\"num\">8</span><span class=\"den\">14</span></span>。分母代表「每份的大小」，份的大小不同就不能直接合併，必須先通分。"
+        },
+        {
+          "type": "text",
+          "html": "約分要找<b>最大</b>公因數才一步到位。例如 <span class=\"frac\"><span class=\"num\">36</span><span class=\"den\">48</span></span>，用 12 約分得 <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span>；若只用 2 逐步約，要做三次，容易出錯。"
+        },
+        {
+          "type": "text",
+          "html": "答案是假分數時通常化為帶分數：<span class=\"frac\"><span class=\"num\">17</span><span class=\"den\">5</span></span> = 3 <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">5</span></span>（17 ÷ 5 = 3 餘 2）。做加減或比較大小時，用假分數較方便。"
+        }
+      ],
+      "keywords": [
+        "擴分",
+        "約分",
+        "通分",
+        "最小公倍數"
+      ]
+    },
+    {
+      "id": "p5-u3",
+      "title": "分數乘法",
+      "en": "Multiplication of Fractions",
+      "strand": "數與代數",
+      "objectives": [
+        "理解「一個數的幾分之幾」用乘法計算",
+        "能計算分數乘整數、分數乘分數",
+        "能把帶分數化為假分數後相乘",
+        "能用約分簡化計算並判斷答案是否合理"
+      ],
+      "teaching": [
+        {
+          "type": "text",
+          "html": "分數乘法有兩種意義：<b>重複相加</b>（<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">8</span></span> × 4 是 4 個 <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">8</span></span>）和<b>取部分</b>（一塊地的 <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span> 的 <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">5</span></span>）。中文的「的」字在數學上就是乘號。"
+        },
+        {
+          "type": "formula",
+          "html": "分數 × 分數：<span class=\"frac\"><span class=\"num\">a</span><span class=\"den\">b</span></span> × <span class=\"frac\"><span class=\"num\">c</span><span class=\"den\">d</span></span> = <span class=\"frac\"><span class=\"num\">a × c</span><span class=\"den\">b × d</span></span><br>整數 × 分數：n × <span class=\"frac\"><span class=\"num\">a</span><span class=\"den\">b</span></span> = <span class=\"frac\"><span class=\"num\">n × a</span><span class=\"den\">b</span></span><br>帶分數先化假分數：2 <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span> = <span class=\"frac\"><span class=\"num\">11</span><span class=\"den\">4</span></span>"
+        },
+        {
+          "type": "example",
+          "title": "例題：計算 1 <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span> × 2 <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span>",
+          "html": "① 化假分數：1 <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span> = <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">3</span></span>，2 <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span> = <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">4</span></span>。<br>② 先交叉約分：<span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">3</span></span> × <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">4</span></span>，3 和 9 同除 3，得 <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">1</span></span> × <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span>。<br>③ 分子乘分子、分母乘分母：<span class=\"frac\"><span class=\"num\">15</span><span class=\"den\">4</span></span>。<br>④ 化帶分數：15 ÷ 4 = 3 餘 3，答案 <b>3 <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span></b>。"
+        },
+        {
+          "type": "tip",
+          "html": "常犯錯誤：把帶分數的整數和分數分開乘，以為 2 <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span> × 3 = 6 <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>。必須先把帶分數化為假分數再乘，正確答案是 7。"
+        },
+        {
+          "type": "text",
+          "html": "乘以小於 1 的分數，結果會<b>變小</b>（24 × <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span> = 18）；乘以大於 1 的帶分數，結果會變大。用這個性質可以快速檢查答案有沒有離譜。"
+        },
+        {
+          "type": "text",
+          "html": "計算前先交叉約分（左上配右下、右上配左下），把數字縮小，可以避免最後出現大數而要反覆約分。"
+        }
+      ],
+      "keywords": [
+        "分數乘法",
+        "假分數",
+        "帶分數",
+        "約分"
+      ]
+    },
+    {
+      "id": "p5-u4",
+      "title": "小數乘除",
+      "en": "Multiplication and Division of Decimals",
+      "strand": "數與代數",
+      "objectives": [
+        "能計算小數乘小數並正確定位小數點",
+        "能計算除以小數（包括整數除以小數）",
+        "能運用商不變的性質把除數化為整數",
+        "能用估算檢查積和商的數量級"
+      ],
+      "teaching": [
+        {
+          "type": "text",
+          "html": "小數乘法先當整數相乘，再數小數位：兩個因數一共有幾位小數，積就有幾位小數。0.4 × 0.3 即 4 × 3 = 12，共兩位小數，所以是 0.12。"
+        },
+        {
+          "type": "formula",
+          "html": "積的小數位數 = 兩個因數小數位數之和。<br>除以小數：被除數和除數同時乘 10、100、1 000…，把除數變成整數，商不變。"
+        },
+        {
+          "type": "example",
+          "title": "例題：計算 0.75 × 1.6",
+          "html": "① 當整數計算：75 × 16 = 1 200。<br>② 數小數位：0.75 有兩位，1.6 有一位，共三位，積寫成 1.200。<br>③ 去掉小數末尾的 0：<b>1.2</b>。<br>④ 估算檢查：0.75 × 1.6 大約是 0.75 × 2 = 1.5，1.2 合理。"
+        },
+        {
+          "type": "tip",
+          "html": "常犯錯誤：計算 1.2 ÷ 0.4 時只把小數點移位給除數。被除數和除數要向右移<b>相同</b>位數：1.2 ÷ 0.4 = 12 ÷ 4 = 3，若只移除數便會錯 10 倍。"
+        },
+        {
+          "type": "text",
+          "html": "除以小數時先化整數：4.8 ÷ 0.15 → 兩數同乘 100 → 480 ÷ 15 = 32。用估算檢查：4.8 ÷ 0.15 大約是 5 ÷ 0.1 = 50，32 的數量級合理。"
+        },
+        {
+          "type": "formula",
+          "html": "1 L = 1 000 mL，1 m = 100 cm，1 kg = 1 000 g。小數乘除常用於單位換算，例如 2.5 m = 250 cm，450 mL = 0.45 L。"
+        }
+      ],
+      "keywords": [
+        "小數乘法",
+        "小數除法",
+        "小數點",
+        "商不變"
+      ]
+    },
+    {
+      "id": "p5-u5",
+      "title": "百分數初步",
+      "en": "Introduction to Percentages",
+      "strand": "數與代數",
+      "objectives": [
+        "理解百分數是分母為 100 的分數",
+        "能把百分數與分數、小數互換",
+        "能求一個數佔另一個數的百分之幾",
+        "能比較分數、小數和百分數的大小"
+      ],
+      "teaching": [
+        {
+          "type": "text",
+          "html": "「25%」讀作百分之二十五，意思是每 100 份中佔 25 份，即 <span class=\"frac\"><span class=\"num\">25</span><span class=\"den\">100</span></span>。百分數只是分母固定為 100 的分數，好處是方便比較不同大小的比例。"
+        },
+        {
+          "type": "formula",
+          "html": "百分數 → 分數：25% = <span class=\"frac\"><span class=\"num\">25</span><span class=\"den\">100</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span><br>百分數 → 小數：25% = 25 ÷ 100 = 0.25<br>小數 → 百分數：0.375 × 100% = 37.5%<br>分數 → 百分數：<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">8</span></span> = 0.375 = 37.5%"
+        },
+        {
+          "type": "example",
+          "title": "例題：把 <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">8</span></span> 化成百分數",
+          "html": "① 用分子除以分母：3 ÷ 8 = 0.375。<br>② 把小數乘 100%：0.375 × 100% = 37.5%。<br>③ 也可擴分：<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">8</span></span> = <span class=\"frac\"><span class=\"num\">37.5</span><span class=\"den\">100</span></span>，即 37.5%。<br>答案：<b>37.5%</b>。"
+        },
+        {
+          "type": "tip",
+          "html": "常犯錯誤：把 0.5 當成 5%%，或把 5%% 當成 0.5。百分數轉小數要除以 100（小數點向左移兩位），小數轉百分數要乘 100（向右移兩位）。"
+        },
+        {
+          "type": "text",
+          "html": "求「A 佔 B 的百分之幾」就是 A ÷ B × 100%%。例如全班 40 人中有 15 人戴眼鏡，15 ÷ 40 = 0.375，即 37.5%%。"
+        },
+        {
+          "type": "text",
+          "html": "比較大小時全部化成小數最穩妥：0.3、<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">8</span></span>、35% 之中，0.3 &lt; 35% &lt; <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">8</span></span>（0.375）。不要只看分子或數字表面的大小。"
+        }
+      ],
+      "keywords": [
+        "百分數",
+        "百分號",
+        "互換",
+        "比例"
+      ]
+    },
+    {
+      "id": "p5-u6",
+      "title": "面積：三角形、平行四邊形與梯形",
+      "en": "Area of Triangles, Parallelograms and Trapeziums",
+      "strand": "度量",
+      "objectives": [
+        "能運用公式計算三角形、平行四邊形和梯形的面積",
+        "能辨認與各底對應的高",
+        "能在已知面積時反求底或高",
+        "能在計算前統一度量單位"
+      ],
+      "teaching": [
+        {
+          "type": "text",
+          "html": "把兩個完全相同的三角形拼起來，會得到一個平行四邊形，所以三角形的面積是「底 × 高 ÷ 2」。這個拼貼想法解釋了為甚麼要除以 2。"
+        },
+        {
+          "type": "formula",
+          "html": "三角形面積 = 底 × 高 ÷ 2<br>平行四邊形面積 = 底 × 高<br>梯形面積 = (上底 + 下底) × 高 ÷ 2"
+        },
+        {
+          "type": "example",
+          "title": "例題：梯形上底 6 cm、下底 10 cm、高 5 cm",
+          "html": "① 上底 + 下底 = 6 + 10 = 16 cm。<br>② 16 × 5 = 80。<br>③ 80 ÷ 2 = 40。<br>所以面積是 <b>40 cm²</b>。<br>（單位要寫 cm²，不是 cm。）"
+        },
+        {
+          "type": "tip",
+          "html": "常犯錯誤：把斜邊當作高。高必須與底<b>垂直</b>（成直角）；同一個三角形換另一條底時，要配對相應的高，但面積不變。"
+        },
+        {
+          "type": "text",
+          "html": "逆向問題用逆運算拆公式：三角形面積 36 cm²、底 9 cm，則高 = 36 × 2 ÷ 9 = 8 cm；平行四邊形面積 72 cm²、高 8 cm，則底 = 72 ÷ 8 = 9 cm。"
+        },
+        {
+          "type": "text",
+          "html": "計算前先把長度化成同一單位。底 0.4 m、高 25 cm 的三角形，要先寫成 40 cm 和 25 cm，面積才是 40 × 25 ÷ 2 = 500 cm²；若直接乘 0.4 × 25 會得到錯誤的 10。"
+        }
+      ],
+      "keywords": [
+        "面積",
+        "底",
+        "高",
+        "梯形"
+      ]
+    },
+    {
+      "id": "p5-u7",
+      "title": "體積與排水法",
+      "en": "Volume and Displacement",
+      "strand": "度量",
+      "objectives": [
+        "能計算長方體和正方體的體積",
+        "能理解 cm³ 與 L、mL 的關係",
+        "能用排水法求不規則物件的體積",
+        "能解決涉及水位上升或下降的問題"
+      ],
+      "teaching": [
+        {
+          "type": "text",
+          "html": "體積是物件所佔空間的大小。邊長 1 cm 的正方體體積是 1 cm³；長方體可以切成一層層的 1 cm³ 小方塊，所以體積 = 長 × 寬 × 高。"
+        },
+        {
+          "type": "formula",
+          "html": "長方體體積 = 長 × 寬 × 高<br>正方體體積 = 邊長 × 邊長 × 邊長<br>1 L = 1 000 mL = 1 000 cm³<br>排水法：物件體積 = 容器底面積 × 水位上升的高度"
+        },
+        {
+          "type": "example",
+          "title": "例題：用排水法求石頭體積",
+          "html": "水缸內部底面積 200 cm²，放入石頭（完全浸沒）後，水位由 12 cm 升至 15 cm。<br>① 水位上升 15 − 12 = 3 cm。<br>② 石頭體積 = 200 × 3 = 600。<br>答案：<b>600 cm³</b>。"
+        },
+        {
+          "type": "tip",
+          "html": "常犯錯誤：用上升後的水深（15 cm）乘底面積。排水法只用<b>上升了</b>的高度，因為石頭只佔去那 3 cm 厚的一層水的空間。"
+        },
+        {
+          "type": "text",
+          "html": "原理：石頭佔去了水原本的空間，水被「擠」上去，被擠走的水的體積正好等於石頭的體積。所以量水而不量石頭，也能求出不規則物件的體積。"
+        },
+        {
+          "type": "text",
+          "html": "反過來也可求水位升多少：上升高度 = 物件體積 ÷ 容器底面積。例如 900 cm³ 的鐵塊放入底面積 300 cm² 的容器，水位會上升 3 cm。"
+        }
+      ],
+      "keywords": [
+        "體積",
+        "立方厘米",
+        "排水法",
+        "水位"
+      ]
+    },
+    {
+      "id": "p5-u8",
+      "title": "簡易方程",
+      "en": "Simple Equations",
+      "strand": "數與代數",
+      "objectives": [
+        "認識未知數與方程的意義",
+        "能用等式性質解一步和兩步方程",
+        "能就簡單情境列方程",
+        "能把答案代回方程驗算"
+      ],
+      "teaching": [
+        {
+          "type": "text",
+          "html": "方程是含有未知數的等式，例如 x + 7 = 15。「解方程」就是找出令等式成立的 x 值。天平兩邊同時加減相同的東西仍然平衡，這就是等式性質。"
+        },
+        {
+          "type": "formula",
+          "html": "等式兩邊同時加、減、乘或除以同一個數（除數不可為 0），等式仍然成立。<br>解方程目標：把 x 單獨留在等號一邊。"
+        },
+        {
+          "type": "example",
+          "title": "例題：解 3x + 8 = 26",
+          "html": "① 兩邊同時減 8：3x + 8 − 8 = 26 − 8，得 3x = 18。<br>② 兩邊同時除以 3：x = 6。<br>③ 驗算：3 × 6 + 8 = 18 + 8 = 26，與右邊相等。<br>答案：<b>x = 6</b>。"
+        },
+        {
+          "type": "tip",
+          "html": "常犯錯誤：只寫「6」而沒有寫「x = 6」；或 3x = 18 之後忘記除以 3。未知數的值必須以等式形式作答，並順手驗算。"
+        },
+        {
+          "type": "text",
+          "html": "列方程三步：① 用 x 表示未知量並寫明單位；② 依題意找「相等」的關係列式；③ 解方程後寫答句。找等量關係的提示字有「共」「相差」「找回」「總數」。"
+        },
+        {
+          "type": "example",
+          "title": "例題：小明買 3 本書，付 100 元找回 16 元",
+          "html": "① 設每本書 x 元。<br>② 3 本書的價錢加找回的錢等於付出的錢：3x + 16 = 100。<br>③ 3x = 84，x = 28。<br>④ 每本書 <b>28 元</b>（驗算：3 × 28 + 16 = 100）。"
+        }
+      ],
+      "keywords": [
+        "方程",
+        "未知數",
+        "等式性質",
+        "驗算"
+      ]
+    },
+    {
+      "id": "p5-u9",
+      "title": "平均數與折線圖",
+      "en": "Averages and Line Graphs",
+      "strand": "數據處理",
+      "objectives": [
+        "能計算一組數據的平均數",
+        "能由平均數和數量反求總數或缺失的數據",
+        "能閱讀及繪畫折線圖",
+        "能用平均數和趨勢比較兩組數據"
+      ],
+      "teaching": [
+        {
+          "type": "text",
+          "html": "平均數是把總數平均分給每一個項目，代表整組數據的整體水平。它一定介乎最小值與最大值之間，可以用來比較兩組數量不同的數據。"
+        },
+        {
+          "type": "formula",
+          "html": "平均數 = 總數 ÷ 數量<br>總數 = 平均數 × 數量<br>缺失的一項 = 平均數 × 數量 − 其餘各項之和"
+        },
+        {
+          "type": "example",
+          "title": "例題：四次測驗得分 78、85、90、87",
+          "html": "① 求總分：78 + 85 + 90 + 87 = 340。<br>② 平均分 = 340 ÷ 4 = 85。<br>③ 檢查：85 在 78 與 90 之間，合理。<br>答案：<b>平均 85 分</b>。"
+        },
+        {
+          "type": "tip",
+          "html": "常犯錯誤：以為平均數等於「中間那個數」。平均數要用總數除以數量；若五個數的平均是 82，總分是 410 而不是 82。"
+        },
+        {
+          "type": "text",
+          "html": "折線圖用點表示數據、用線連接，最適合顯示<b>隨時間的變化趨勢</b>，例如一星期每天的最高氣溫。線向上代表增加，向下代表減少，斜度越陡表示變化越快。"
+        },
+        {
+          "type": "text",
+          "html": "讀折線圖三步：看標題和兩軸代表甚麼 → 讀出各點的數值 → 比較高低與斜度，並用文字描述趨勢，例如「由星期一至星期三持續上升，星期四回落」。"
+        }
+      ],
+      "keywords": [
+        "平均數",
+        "總數",
+        "折線圖",
+        "趨勢"
+      ]
+    }
+  ],
+  "quiz": {
+    "basic": [
+      {
+        "q": "把 46 782 四捨五入至萬位，結果是多少？",
+        "options": [
+          "40 000",
+          "46 000",
+          "50 000",
+          "47 000"
+        ],
+        "answer": 2,
+        "explain": "46 782 的萬位是 4，右面的千位是 6。因為 6 ≥ 5，萬位要加 1 變成 5，其後數位補 0，所以是 50 000。",
+        "unit": "p5-u1"
+      },
+      {
+        "q": "把 <span class=\"frac\"><span class=\"num\">18</span><span class=\"den\">24</span></span> 約至最簡，答案是多少？",
+        "options": [
+          "<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span>",
+          "<span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span>",
+          "<span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">5</span></span>",
+          "<span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">6</span></span>"
+        ],
+        "answer": 0,
+        "explain": "18 和 24 的最大公因數是 6。分子分母同除以 6：18 ÷ 6 = 3，24 ÷ 6 = 4，所以是 <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span>。",
+        "unit": "p5-u2"
+      },
+      {
+        "q": "計算 <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> + <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>。",
+        "options": [
+          "<span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">5</span></span>",
+          "<span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">6</span></span>",
+          "<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span>",
+          "<span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">6</span></span>"
+        ],
+        "answer": 1,
+        "explain": "2 和 3 的最小公倍數是 6。<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">6</span></span>，<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span> = <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">6</span></span>，相加得 <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">6</span></span>。",
+        "unit": "p5-u2"
+      },
+      {
+        "q": "計算 <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">5</span></span> × 10。",
+        "options": [
+          "3",
+          "5",
+          "6",
+          "50"
+        ],
+        "answer": 2,
+        "explain": "整數乘分數：10 × 3 = 30，30 ÷ 5 = 6。也可先約分：10 和 5 同除 5，得 3 × 2 = 6。",
+        "unit": "p5-u3"
+      },
+      {
+        "q": "計算 0.6 × 0.4。",
+        "options": [
+          "2.4",
+          "0.24",
+          "0.024",
+          "24"
+        ],
+        "answer": 1,
+        "explain": "先當整數算：6 × 4 = 24。0.6 和 0.4 各有一位小數，共兩位，所以積是 0.24。",
+        "unit": "p5-u4"
+      },
+      {
+        "q": "把 0.25 化成百分數，是多少？",
+        "options": [
+          "2.5%",
+          "25%",
+          "250%",
+          "0.25%"
+        ],
+        "answer": 1,
+        "explain": "小數化百分數要乘 100%：0.25 × 100% = 25%。即每 100 份佔 25 份。",
+        "unit": "p5-u5"
+      },
+      {
+        "q": "一個三角形的底是 12 cm，高是 7 cm，面積是多少？",
+        "options": [
+          "84 cm²",
+          "42 cm²",
+          "19 cm²",
+          "21 cm²"
+        ],
+        "answer": 1,
+        "explain": "三角形面積 = 底 × 高 ÷ 2 = 12 × 7 ÷ 2 = 84 ÷ 2 = 42 cm²。忘記除以 2 就會錯選 84 cm²。",
+        "unit": "p5-u6"
+      },
+      {
+        "q": "四次測驗得分是 72、85、90、93，平均分是多少？",
+        "options": [
+          "84 分",
+          "85 分",
+          "86 分",
+          "90 分"
+        ],
+        "answer": 1,
+        "explain": "總分 = 72 + 85 + 90 + 93 = 340，平均 = 340 ÷ 4 = 85 分。平均分在最低 72 與最高 93 之間，合理。",
+        "unit": "p5-u9"
+      }
+    ],
+    "advanced": [
+      {
+        "q": "計算 <span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">8</span></span> − <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">12</span></span>。",
+        "options": [
+          "<span class=\"frac\"><span class=\"num\">11</span><span class=\"den\">24</span></span>",
+          "<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>",
+          "<span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">24</span></span>",
+          "<span class=\"frac\"><span class=\"num\">12</span><span class=\"den\">24</span></span>"
+        ],
+        "answer": 0,
+        "explain": "8 和 12 的最小公倍數是 24。<span class=\"frac\"><span class=\"num\">7</span><span class=\"den\">8</span></span> = <span class=\"frac\"><span class=\"num\">21</span><span class=\"den\">24</span></span>，<span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">12</span></span> = <span class=\"frac\"><span class=\"num\">10</span><span class=\"den\">24</span></span>，相減得 <span class=\"frac\"><span class=\"num\">11</span><span class=\"den\">24</span></span>，已是最簡。",
+        "unit": "p5-u2"
+      },
+      {
+        "q": "計算 1 <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span> × 2 <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span>。",
+        "options": [
+          "3 <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span>",
+          "3 <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span>",
+          "2 <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">12</span></span>",
+          "3 <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>"
+        ],
+        "answer": 0,
+        "explain": "先化假分數：<span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">3</span></span> × <span class=\"frac\"><span class=\"num\">9</span><span class=\"den\">4</span></span>。3 和 9 同除 3 約分，得 <span class=\"frac\"><span class=\"num\">5</span><span class=\"den\">1</span></span> × <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span> = <span class=\"frac\"><span class=\"num\">15</span><span class=\"den\">4</span></span> = 3 <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span>。",
+        "unit": "p5-u3"
+      },
+      {
+        "q": "計算 4.8 ÷ 0.15。",
+        "options": [
+          "3.2",
+          "32",
+          "320",
+          "0.32"
+        ],
+        "answer": 1,
+        "explain": "被除數和除數同時乘 100，變成 480 ÷ 15。15 × 32 = 480，所以商是 32。估算 4.8 ÷ 0.15 ≈ 5 ÷ 0.1 = 50，32 的數量級合理。",
+        "unit": "p5-u4"
+      },
+      {
+        "q": "長方體容器內部長 25 cm、闊 12 cm，水深 8 cm。放入鐵塊並完全浸沒後，水位升至 10.5 cm。鐵塊的體積是多少？",
+        "options": [
+          "750 cm³",
+          "300 cm³",
+          "2 400 cm³",
+          "7 500 cm³"
+        ],
+        "answer": 0,
+        "explain": "水位上升 10.5 − 8 = 2.5 cm。容器底面積 = 25 × 12 = 300 cm²，鐵塊體積 = 300 × 2.5 = 750 cm³。",
+        "unit": "p5-u7"
+      },
+      {
+        "q": "解方程 5x − 7 = 38。",
+        "options": [
+          "6.2",
+          "9",
+          "7",
+          "45"
+        ],
+        "answer": 1,
+        "explain": "兩邊同時加 7：5x = 45。兩邊同時除以 5：x = 9。驗算 5 × 9 − 7 = 38，正確。",
+        "unit": "p5-u8"
+      },
+      {
+        "q": "小明五次測驗的平均分是 82 分。若首四次得分是 78、85、80、84，第五次得多少分？",
+        "options": [
+          "82 分",
+          "83 分",
+          "84 分",
+          "85 分"
+        ],
+        "answer": 1,
+        "explain": "五次總分 = 82 × 5 = 410，首四次總分 = 78 + 85 + 80 + 84 = 327。第五次 = 410 − 327 = 83 分。",
+        "unit": "p5-u9"
+      }
+    ],
+    "challenge": [
+      {
+        "q": "一個整數四捨五入至百位後是 3 700。這個數最大可能是多少？",
+        "options": [
+          "3 749",
+          "3 750",
+          "3 699",
+          "3 700"
+        ],
+        "answer": 0,
+        "explain": "四捨五入至百位是 3 700，即原數在 3 650 至 3 749 之間：3 650 會入成 3 700，3 750 就會入成 3 800。所以最大是 3 749。",
+        "unit": "p5-u1"
+      },
+      {
+        "q": "一桶水，第一天用去全桶的 <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">5</span></span>，第二天用去餘下的 <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>。還剩下全桶的幾分之幾？",
+        "options": [
+          "<span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">5</span></span>",
+          "<span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">5</span></span>",
+          "<span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">5</span></span>",
+          "<span class=\"frac\"><span class=\"num\">4</span><span class=\"den\">15</span></span>"
+        ],
+        "answer": 1,
+        "explain": "第一天後剩 1 − <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">5</span></span> = <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">5</span></span>。第二天用去餘下的 <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>，即 <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">5</span></span> × <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span> = <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">5</span></span>。剩下 <span class=\"frac\"><span class=\"num\">3</span><span class=\"den\">5</span></span> − <span class=\"frac\"><span class=\"num\">1</span><span class=\"den\">5</span></span> = <span class=\"frac\"><span class=\"num\">2</span><span class=\"den\">5</span></span>。",
+        "unit": "p5-u2"
+      },
+      {
+        "q": "長方體水缸內部長 80 cm、闊 50 cm，水深 25 cm。放入一個邊長 20 cm 的正方體鐵塊，鐵塊完全浸沒而水沒有溢出。水位上升多少 cm？",
+        "options": [
+          "1 cm",
+          "2 cm",
+          "2.5 cm",
+          "4 cm"
+        ],
+        "answer": 1,
+        "explain": "鐵塊體積 = 20 × 20 × 20 = 8 000 cm³，水缸底面積 = 80 × 50 = 4 000 cm²。上升高度 = 8 000 ÷ 4 000 = 2 cm。放入後水深 27 cm，高於鐵塊的 20 cm，確實完全浸沒。",
+        "unit": "p5-u7"
+      },
+      {
+        "q": "小明首三次測驗的平均分是 78 分，第四次測驗後平均分升至 81 分。第四次測驗得多少分？",
+        "options": [
+          "84 分",
+          "87 分",
+          "90 分",
+          "93 分"
+        ],
+        "answer": 2,
+        "explain": "首三次總分 = 78 × 3 = 234，四次總分 = 81 × 4 = 324。第四次 = 324 − 234 = 90 分。不是把 81 直接加 3，因為平均分的基數改變了。",
+        "unit": "p5-u9"
+      }
+    ]
+  }
+}
